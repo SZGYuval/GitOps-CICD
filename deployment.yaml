@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: python-container
-          image: szgyuval123/gitops-repo:python-app-18-4a65de16bbb03620ce0b34296478fc1df8520d75
+          image: szgyuval123/gitops-repo:python-app-19-3cf77fb9fa774f3887dff1df47ff981a1c280c59
           ports:
             - containerPort: 5000
