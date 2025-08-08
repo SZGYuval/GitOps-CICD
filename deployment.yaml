@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app
+  namespace: python-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python
+  template:
+    metadata:
+      labels:
+        app: python
+    spec:
+      containers:
+        - name: python-container
+          image: szgyuval123/mission-repo:233a90b3349ffb49b4adca2683f08ba1c897d0c3
+          ports:
+            - containerPort: 5000
