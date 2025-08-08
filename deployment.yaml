@@ -4,7 +4,7 @@ metadata:
   name: python-app
   namespace: python-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: python
